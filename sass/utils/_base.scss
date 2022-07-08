@@ -51,6 +51,25 @@ footer {
     padding-right: 15px;
 }
 
+@media (max-width: 767px) {
+    .container {
+    min-height: 60px;
+    max-width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+    max-width: 1200px;
+    }
+}
+
 .opacity:hover,
 .opacity:focus {
     opacity: 1;
@@ -72,4 +91,10 @@ section {
 .service {
     padding-top: 0;
     background-color:var(--secondary-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+    .service {
+        display: none;
+    }
 }
