@@ -78,3 +78,50 @@
 }
 }
 }
+
+@media screen and (max-width: 767px) {
+    .team-list {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team-list {
+    flex-wrap: wrap;
+    margin: -15px;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .team-list__item {
+    max-width: 450px;
+    margin: 0px 15px 30px;
+    }
+}
+
+    @media screen and (max-width: 767px) {
+    .team-list__item:last-child {
+    margin-right: 15px;
+    margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team-list__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .team-list__container {
+    padding-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team-list__container {
+    padding-bottom: 24px;
+    }
+}
