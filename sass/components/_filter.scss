@@ -42,3 +42,30 @@
 }
 }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .filter-list {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter-list__item {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .buttons  {
+        margin-bottom: 30px;
+    }
+}

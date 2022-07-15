@@ -90,9 +90,9 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .sub-form__button {
-    margin-top: 30px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +125,13 @@
     color:var(--logo-color);
 }
 }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .logo-footer {
+    font-size: 26px;
+    line-height: 1.17;
+    }
 }
 
 .footer-list {
@@ -210,5 +217,97 @@
 
     &__icon {
     fill: var(--secondary-text-color);
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-contacts {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .tablet {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .tablet:last-child {
+    min-width: 450px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+}
+}
+
+.tablet:last-child {
+    margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-info {
+        width: 768px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-network {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-join {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 90px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .form-footer {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        align-items: center;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .sub-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .sub-form__mail {
+        margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .sub-form__button {
+        margin-top: 0px;
 }
 }

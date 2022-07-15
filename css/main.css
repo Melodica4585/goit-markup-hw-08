@@ -767,9 +767,9 @@ section {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .sub-form__button {
-    margin-top: 30px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -799,6 +799,12 @@ section {
   color: var(--logo-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+}
 .footer-list__item {
   margin-bottom: 9px;
   align-items: center;
@@ -869,6 +875,85 @@ section {
   fill: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet:last-child {
+    min-width: 450px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+  }
+}
+.tablet:last-child {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-info {
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-network {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-join {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 90px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-form__mail {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-form__button {
+    margin-top: 0px;
+  }
+}
 .footer-info {
   display: flex;
   align-items: baseline;
@@ -950,9 +1035,9 @@ section {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .sub-form__button {
-    margin-top: 30px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -982,6 +1067,12 @@ section {
   color: var(--logo-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+}
 .footer-list__item {
   margin-bottom: 9px;
   align-items: center;
@@ -1052,6 +1143,85 @@ section {
   fill: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet:last-child {
+    min-width: 450px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+  }
+}
+.tablet:last-child {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-info {
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-network {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-join {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 90px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-form__mail {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-form__button {
+    margin-top: 0px;
+  }
+}
 .form-footer {
   margin-left: auto;
 }
@@ -1376,6 +1546,29 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filter-list__item {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .buttons {
+    margin-bottom: 30px;
+  }
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -1450,11 +1643,13 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
+    margin-top: -30px;
   }
 }
 @media screen and (max-width: 767px) {
   .project-list__item {
     max-width: 450px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1467,14 +1662,13 @@ textarea {
   .project-list {
     align-items: stretch;
     flex-wrap: wrap;
-    margin-top: -15px;
     margin-right: -15px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-list__item {
     width: calc((100% - 60px) / 2);
-    margin-top: 15px;
     margin-right: 15px;
   }
 }
