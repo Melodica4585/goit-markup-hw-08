@@ -257,7 +257,12 @@
                 </div>
                 </li> 
                 <li class="team-list__item">
-                    <img src="./images/img(5).jpg" alt="designer" width="270"/>
+                    <picture>
+                        <source srcset="./images/igor-270-1.jpg.jpg 1x, ./images/igor-270-2.jpg 2x" type="image/jpeg" media="(min-width: 1200px)">
+                        <source srcset="./images/igor-354-1.jpg 1x, ./images/igor-354-2.jpg 2x" type="image/jpeg" media="(min-width: 768px)">
+                        <source srcset="./images/igor-450-1.jpg 1x, ./images/igor-450-2.jpg 2x" type="image/jpeg" media="(min-width: 480px)">
+                    </picture>
+                    <img src="./images/igor-270-1.jpg" alt="designer" width="270"/>
                     <div class="team-list__container">
                     <h3 class="team-list__name">Михаил Ермаков</h3>
                     <p class="team-list__position">UI Designer</p>
