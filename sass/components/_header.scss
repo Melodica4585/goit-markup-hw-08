@@ -194,3 +194,30 @@
     padding-bottom: 26px;
   }
 }
+
+.btn-burger {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-burger {
+    display: inline-flex;
+  }
+}
+
+.btn-burger .btn-burger__icon-cross {
+  display: none;
+}
+
+.btn-burger.is-open .btn-burger__icon-cross {
+  display: block;
+}
+
+.btn-burger.is-open .btn-burger__icon-burger {
+  display: none;
+}
