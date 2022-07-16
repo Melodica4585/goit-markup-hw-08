@@ -464,6 +464,32 @@ section {
   background: var(--button-bg-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner-section {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 118px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-section {
+    max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 118px 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .banner-section__banner-title {
+    width: 360px;
+    font-size: 26px;
+  }
+}
 .features section {
   background-color: var(--secondary-text-color);
 }
