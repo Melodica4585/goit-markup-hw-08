@@ -153,7 +153,7 @@ section {
 }
 .header-contacts {
   display: flex;
-  margin-left: auto;
+  margin-left: 305px;
 }
 .header-contacts__mail {
   font-weight: 500;
@@ -170,7 +170,7 @@ section {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   padding: auto;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .header-contacts__envelope {
   margin-right: 10px;
@@ -289,6 +289,7 @@ section {
   .header-contacts {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -337,6 +338,82 @@ section {
   display: none;
 }
 
+.burger-menu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-list {
+    display: none;
+  }
+}
+.nav__button-current {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu {
+    height: 100vh;
+    padding: 48px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .burger-menu.is-open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+@media screen and (max-width: 767px) {
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 88px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    margin-top: auto;
+  }
+}
+@media (max-width: 767px) {
+  .header-contacts__mail + .header-contacts__phone {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .header-contacts__link {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .banner-section {
   background-color: var(--banner-bg-color);
   background: #2f303a;
@@ -1535,6 +1612,13 @@ textarea {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
+  }
+}
 .filter-list {
   display: flex;
   justify-content: center;

@@ -10,7 +10,7 @@
 
   &-contacts {
   display: flex;
-  margin-left: auto;
+  margin-left: 305px;
   
   &__mail {
   font-weight: 500;
@@ -30,7 +30,7 @@
   color: var(--title-text-color);
   
   padding: auto;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
   &__envelope {
@@ -139,6 +139,7 @@
     &:focus {
     color: var(--accent-color);
     }
+
     &:hover {
     background-color: var(--secondary-text-color);
     color: var(--accent-color);
@@ -168,6 +169,7 @@
   .header-contacts {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
   }
 }
 
@@ -220,4 +222,98 @@
 
 .btn-burger.is-open .btn-burger__icon-burger {
   display: none;
+}
+
+.burger-menu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-list {
+    display: none;
+  }
+}
+
+.nav__button-current {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu {
+    height: 100vh;
+    padding: 48px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-contacts__mail + .header-contacts__phone {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .header-contacts__link {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }

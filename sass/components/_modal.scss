@@ -233,3 +233,12 @@ textarea {
     fill: var(--accent-color);
 }
 }
+
+
+@media screen and (max-width: 1199px) {
+    .modal {
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
+    }
+}
