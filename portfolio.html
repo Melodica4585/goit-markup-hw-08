@@ -17,11 +17,20 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-        <nav class="nav">
             <a href="index.html" class="nav__logo"><span class="nav__logo-part">Web</span>Studio</a>
+
+            <button class="btn-burger" type="button" aria-expanded="false" data-menu-button="">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="btn-burger__icon-burger" href="./images/icons.svg#icon-burger-menu"></use>
+                <use class="btn-burger__icon-cross" href="./images/icons.svg#icon-burger-close"></use>
+                </svg>
+            </button>
+            
+            <div class="burger-menu" data-menu>
+            <nav class="nav">
             <ul class="nav__site">
-                <li class="nav__site-btn"><a href="./index.html" class="nav__button">Студия</a></li> 
-                <li class="nav__site-btn"><a href="portfolio.html" class="nav__button-current">Портфолио</a></li> 
+                <li class="nav__site-btn"><a href="index.html" class="nav__button">Студия</a></li> 
+                <li class="nav__site-btn"><a href="./portfolio.html" class="nav__button-current">Портфолио</a></li> 
                 <li class="nav__site-btn"><a href="index.html" class="nav__button">Контакты</a></li> 
             </ul>
         </nav>
@@ -41,6 +50,14 @@
                 </svg>+38 096 111 11 11</a>
             </li>
         </ul>
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><a href="" class="mobile-list__link">Instagram</a></li>
+            <li class="mobile-list__item"><a href="" class="mobile-list__link">Twitter</a></li>
+            <li class="mobile-list__item"><a href="" class="mobile-list__link">Facebook</a></li>
+            <li class="mobile-list__item"><a href="" class="mobile-list__link">LinkedIn</a></li>
+        </ul>
+        </div>
+    </nav>
     </div>
     </div>
     </header>
@@ -64,7 +81,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img6.jpg" alt="экран ноутбука" width="370">
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/note-370-1.jpg 1x, 
+                ./images/note-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/note-354-1.jpg 1x,
+                ./images/note-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/note-450-1.jpg 1x,
+                ./images/note-450-2.jpg 2x"
+            />
+    <img src="./images/note-370-1.jpg" alt="экран ноутбука">
+    </picture>
         <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
             Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -77,7 +113,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img7.jpg" alt="баскетболисты" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/basket-370-1.jpg 1x, 
+                ./images/basket-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/basket-354-1.jpg 1x,
+                ./images/basket-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/basket-450-1.jpg 1x,
+                ./images/basket-450-2.jpg 2x"
+            />
+    <img src="./images/basket-370-1.jpg" alt="баскетболисты"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 </div>
@@ -90,7 +145,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img8.jpg" alt="рыба" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/seafood-370-1.jpg 1x, 
+                ./images/seafood-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/seafood-354-1.jpg 1x,
+                ./images/seafood-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/seafood-450-1.jpg 1x,
+                ./images/seafood-450-2.jpg 2x"
+            />
+    <img src="./images/seafood-370-1.jpg" alt="рыба"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -103,7 +177,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img9.jpg" alt="наушники" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/ear-370-1.jpg 1x, 
+                ./images/ear-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/ear-354-1.jpg 1x,
+                ./images/ear-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/ear-450-1.jpg 1x,
+                ./images/ear-450-2.jpg 2x"
+            />
+    <img src="./images/ear-370-1.jpg" alt="наушники"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -116,7 +209,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img10.jpg" alt="коробки" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/blocks-370-1.jpg 1x, 
+                ./images/blocks-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/blocks-354-1.jpg 1x,
+                ./images/blocks-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/blocks-450-1.jpg 1x,
+                ./images/blocks-450-2.jpg 2x"
+            />
+    <img src="./images/blocks-370-1.jpg" alt="коробки"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -129,7 +241,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img11.jpg" alt="экран компьютера" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/display-370-1.jpg 1x, 
+                ./images/display-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/display-354-1.jpg 1x,
+                ./images/display-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/display-450-1.jpg 1x,
+                ./images/display-450-2.jpg 2x"
+            />
+    <img src="./images/display-370-1.jpg" alt="экран компьютера"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -142,7 +273,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img12.jpg" alt="журнал" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/book-370-1.jpg 1x, 
+                ./images/book-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/book-354-1.jpg 1x,
+                ./images/book-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/book-450-1.jpg 1x,
+                ./images/book-450-2.jpg 2x"
+            />
+    <img src="./images/book-370-1.jpg" alt="журнал"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -155,7 +305,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img13.jpg" alt="ярлык" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/tag-370-1.jpg 1x, 
+                ./images/tag-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/tag-354-1.jpg 1x,
+                ./images/tag-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/tag-450-1.jpg 1x,
+                ./images/tag-450-2.jpg 2x"
+            />
+    <img src="./images/tag-370-1.jpg" alt="ярлык"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -168,7 +337,26 @@
 <li class="project-list__item">
     <a href="#" class="project-list__link">
         <div class="overlay-project">
-    <img src="./images/img14.jpg" alt="приложение" width="370"/>
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/type-370-1.jpg 1x, 
+                ./images/type-370-2.jpg 2x" 
+            />
+
+            <source 
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcset="./images/type-354-1.jpg 1x,
+                ./images/type-354-2.jpg 2x" 
+            />
+
+            <source 
+                media="(max-width: 767px)"
+                srcset="./images/type-450-1.jpg 1x,
+                ./images/type-450-2.jpg 2x"
+            />
+    <img src="./images/type-370-1.jpg" alt="приложение"/>
+    </picture>
     <p class="overlay-project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
     </div>
